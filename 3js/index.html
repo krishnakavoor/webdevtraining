@@ -2,6 +2,11 @@
     <head>
         <title>Page title</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+function test(){
+    alert('hi')
+}
+        </script>
 
     </head>
     <body>
@@ -11,8 +16,13 @@
         </header>
         <content>
             <h2>Box model</h2>
-            <div id="box">
+            <div id="box" onclick="test();">
 Text within
+
+            </div>
+            <div>
+                <input type="button" value="text" onclick="test();"/>
+                <input type="test" value="text" onkeyup="test();"/>
             </div>
 <p>Content</p>
         </content>
